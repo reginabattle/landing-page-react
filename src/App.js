@@ -4,7 +4,7 @@ import Header from './components/Header';
 const App = () => {
   return (
   	<React.Fragment>
-  		<Header title="Endless" />
+  		<Header />
 	    <main class="content">
 
 	    </main>

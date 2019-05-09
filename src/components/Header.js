@@ -1,10 +1,12 @@
 import React from 'react';
+import logo from '../images/logo-endless.svg';
+
 
 const Header = props => {
 	return(
 		<header className="header">
 		  <div className="header-content">
-				<h1>{props.title}</h1>
+		  	<img className="logo" src={logo} alt="Logo" />
 			</div>
 		</header>
 	)
