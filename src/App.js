@@ -1,12 +1,13 @@
 import React from 'react';
-import Header from './components/Header';
+import Header from './components/header';
+import Banner from './components/banner';
 
 const App = () => {
   return (
   	<React.Fragment>
   		<Header />
-	    <main class="content">
-
+	    <main className="content">
+	    	<Banner />
 	    </main>
     </React.Fragment>
   );
