@@ -1,0 +1,63 @@
+
+/* Banner
+---------------------------*/
+
+/* Background image */
+
+.banner-image {
+	height: 100vh;
+	background-image: url('../images/photo-couch.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+/* Caption */
+.banner-caption {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 0 2.5rem;
+	@include container;
+}
+
+.banner-caption-content {
+	color: $white;
+	height: 60%;
+	display: flex;
+	padding-right: 5rem;
+	flex-direction: column;
+	justify-content: flex-end;
+	
+
+	h2 {
+		font-size: 3.8rem;
+		font-weight: 300;
+		line-height: 1.2;
+		margin-bottom: 2.2rem;
+
+		@media(min-width: 768px) {
+			font-size: 5rem;
+		}
+	}
+
+	p {
+		font-size: 1.8rem;
+		font-weight: 400;
+
+		@media(min-width: 768px) {
+			font-size: 2rem;
+		}
+
+		&:first-child {
+			font-size: 2.2rem;
+			font-weight: 300;
+			margin-bottom: 0.8rem;
+		}
+	}
+
+	@media(min-width: 768px) {
+		max-width: 630px;
+	}
+}

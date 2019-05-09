@@ -1,7 +1,7 @@
 
 /* Global
 ---------------------------*/
-* {
+*, ::before, ::after {
 	box-sizing: border-box;
 }
 
@@ -13,5 +13,6 @@ body {
 	font-size: 1.6rem;
 	font-family: $font-sans-serif;
 	font-size: 16px;
+	line-height: 1.4;
 	font-weight: 400;
 }

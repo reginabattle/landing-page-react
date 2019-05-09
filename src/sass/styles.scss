@@ -1,7 +1,13 @@
 
 // Config
 @import './config/variables';
+@import './config/mixins';
+@import './config/reset';
 
 // Layout
 @import './layout/base';
 @import './layout/header';
+
+// Components
+@import './components/banner';
+@import './components/buttons';

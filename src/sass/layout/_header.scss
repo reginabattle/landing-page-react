@@ -1,8 +1,25 @@
 
 /* Header
 ---------------------------*/
+.header {
+	background: $color-primary;
+}
+
+.header-content {
+	display: flex;
+	align-items: center;
+	padding: 1.8rem 2.5rem;
+
+	@media(min-width: 768px) {
+		@include container;
+	}
+}
+
+/* Logo */
+
 .logo {
 	display: inline-block;
 	width: 100%;
 	max-width: 144px;
 }
+
