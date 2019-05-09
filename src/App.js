@@ -1,11 +1,14 @@
 import React from 'react';
-import './App.css';
+import Header from './components/Header';
 
-function App() {
+const App = () => {
   return (
-    <main class="content">
-      <h1>Endless</h1>
-    </main>
+  	<React.Fragment>
+  		<Header title="Endless" />
+	    <main class="content">
+
+	    </main>
+    </React.Fragment>
   );
 }
 
