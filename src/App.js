@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/header';
 import Banner from './components/banner';
+import Steps from './components/steps';
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
   		<Header />
 	    <main className="container">
 	    	<Banner />
+	    	<Steps />
 	    </main>
     </React.Fragment>
   );
