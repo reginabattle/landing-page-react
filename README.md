@@ -1,6 +1,6 @@
 # Endless
 
-This is a take home assessment for [SingleStone](https://www.singlestoneconsulting.com).
+This is a technical exercise for [SingleStone](https://www.singlestoneconsulting.com).
 
 ## Get started
 
@@ -13,10 +13,9 @@ Runs the app in the development mode: [http://localhost:3000](http://localhost:3
 
 ### `npm run build`
 
-Serves up production files in the `build` folder.<br>
+Serves up production files in a `build` folder.
 
-## Learn More
+## Resources
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [Create React App](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
