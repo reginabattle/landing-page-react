@@ -17,13 +17,23 @@
 
 .steps-list {
 	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 2.4rem;
-	justify-content: space-between;
+	justify-content: center;
+
+	@media(min-width: 768px) {
+		flex-wrap: nowrap;
+	}
 }
 
 .step {
+	width: 100%;
 	font-size: 1.6rem;
-	padding: 0 1.2rem;
+	padding: 0 1rem;
+
+	@media(min-width: 768px) {
+		max-width: 280px;
+	}
 }
 
 .step-number {
@@ -37,3 +47,4 @@
 	font-weight: 700;
 	text-transform: uppercase;
 }
+
