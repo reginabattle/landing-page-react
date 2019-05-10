@@ -4,7 +4,6 @@ class Steps extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			isLoaded: false,
 			steps: []
 		};	
 	}
@@ -23,15 +22,17 @@ class Steps extends Component {
 	}
 
 	render() {
-		const { isLoaded, steps } = this.state;
+		const { steps } = this.state;
+
 		return (
 			<section className="steps">
 			  <h2>How it works</h2>
-
 			  <ul className="steps-list">
           {steps.map(step => (
             <li key={step.id} className="step">
               <span className="step-number">{step.stepNumber}</span>
+              <h3 className="step-title">{step.versionContent['0'].title}</h3>
+              <p>{step.versionContent['0'].body}</p>
             </li>
           ))}
         </ul>
