@@ -28,7 +28,11 @@ class Steps extends Component {
 			<section className="steps">
 			  <h2>How it works</h2>
 			  <ul className="steps-list">
-          {steps.map(step => (
+          {steps
+          	.sort( (a, b) => {
+          		return a.stepNumber - b.stepNumber;
+          	})
+          	.map(step => (
             <li key={step.id} className="step">
               <span className="step-number">{step.stepNumber}</span>
               <h3 className="step-title">{step.versionContent['0'].title}</h3>
