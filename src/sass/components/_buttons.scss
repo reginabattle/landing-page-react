@@ -10,7 +10,7 @@
 	font-weight: 700;
 	width: 100%;
 	max-width: 195px;
-	padding: 1.2rem 0.8rem;
+	padding: 1.3rem 0.5rem;
 	border: none;
 	border-radius: 22px;
 	text-align: center;
@@ -18,10 +18,12 @@
 	text-transform: uppercase;
 
 	&:hover {
+		transform: translate(0,-3px);
 		background-color: darken($color-secondary, 8%);
 	}
 
 	&:active {
+		transform: translate(0,0);
 		background-color: darken($color-secondary, 14%);
 	}
 }
