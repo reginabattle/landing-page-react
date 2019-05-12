@@ -40,7 +40,7 @@ class Steps extends Component {
           				b = new Date(b.effectiveDate).getTime();
           				return (today - a) > (today - b) ? 1 : -1;
           			});
-          			versionContent.slice(0, 1);
+          			versionContent.splice(1, versionContent.length);
           		}
           		return step;
           	})
