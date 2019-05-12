@@ -4,20 +4,30 @@ This is a technical exercise for [SingleStone](https://www.singlestoneconsulting
 
 ## Get started
 
-In the project directory, run the following command:
+In the project directory, run the command below to install node packages.
 
 ```sh
 npm install
 ```
 
-### `npm start`
+### Run the app
+The command below runs the app in development mode.
 
-Runs the app in development mode: [http://localhost:3000](http://localhost:3000)
+```sh
+npm start
+```
+
+To view in the browser, go to [http://localhost:3000](http://localhost:3000).
 
 
 ### `npm run build`
+The command below serves up production files.
 
-Serves up production files in a `build` folder.
+```sh
+npm run build
+```
+
+These files can be found in the `build` folder.
 
 ## Tools
 
