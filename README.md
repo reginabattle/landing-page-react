@@ -20,7 +20,7 @@ npm start
 To view in the browser, go to [http://localhost:3000](http://localhost:3000).
 
 
-### `npm run build`
+### Production ready
 The command below serves up production files.
 
 ```sh
