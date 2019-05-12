@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../images/logo-endless.svg';
 
-const Header = props => {
+const Header = () => {
 	return(
 		<header className="header">
 		  <div className="header-content">

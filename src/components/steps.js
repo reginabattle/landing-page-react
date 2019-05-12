@@ -46,7 +46,7 @@ class Steps extends Component {
           	})
           	.map(step => (
             <li key={step.id} className="step">
-              <span className="step-number">{step.stepNumber}</span>
+              <span className="step-number">0{step.stepNumber}</span>
               <h3 className="step-title">{step.versionContent['0'].title}</h3>
               <p>{step.versionContent['0'].body}</p>
             </li>

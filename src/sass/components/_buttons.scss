@@ -18,6 +18,10 @@
 	text-transform: uppercase;
 
 	&:hover {
-		background-color: darken($color-secondary, 6%);
+		background-color: darken($color-secondary, 8%);
+	}
+
+	&:active {
+		background-color: darken($color-secondary, 14%);
 	}
 }

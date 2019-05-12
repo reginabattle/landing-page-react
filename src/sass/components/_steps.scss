@@ -29,7 +29,7 @@
 .step {
 	width: 100%;
 	font-size: 1.6rem;
-	padding: 0 1rem;
+	padding: 0 1.5rem;
 
 	@media(min-width: 768px) {
 		max-width: 280px;
@@ -38,7 +38,10 @@
 
 .step-number {
 	color: $blue;
+	display: inline-block;
 	font-size: 6rem;
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
 	border-bottom: 5px solid $color-secondary;
 }
 
