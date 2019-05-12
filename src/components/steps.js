@@ -16,14 +16,13 @@ class Steps extends Component {
 					isLoaded: true,
 					steps: json
 				});
-				console.log('steps:', this.state.steps);
+				//console.log('steps:', this.state.steps);
 			}
 		);
 	}
 
 	render() {
 		const { steps } = this.state;
-
 		return (
 			<section className="steps">
 			  <h2>How it works</h2>
@@ -31,6 +30,19 @@ class Steps extends Component {
           {steps
           	.sort( (a, b) => {
           		return a.stepNumber - b.stepNumber;
+          	})
+          	.filter((step, index) => {
+          		const { versionContent } = step;
+          		if(versionContent.length > 1) {
+          			versionContent.sort((a, b) => {
+          				const today = new Date().getTime(); 
+          				a = new Date(a.effectiveDate).getTime();
+          				b = new Date(b.effectiveDate).getTime();
+          				return (today - a) > (today - b) ? 1 : -1;
+          			});
+          			versionContent.slice(0, 1);
+          		}
+          		return step;
           	})
           	.map(step => (
             <li key={step.id} className="step">
