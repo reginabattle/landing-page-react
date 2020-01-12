@@ -1,6 +1,6 @@
 # Endless
 
-This is a technical exercise for [SingleStone](https://www.singlestoneconsulting.com) &mdash; a dynamic landing page built with React.
+A dynamic landing page built with React.
 
 ## Get started
 
